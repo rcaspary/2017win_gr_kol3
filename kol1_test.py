@@ -1,9 +1,10 @@
+#@author: SinusAlfa
+
 import unittest
 from kol1 import *
 
 class ClientTest(unittest.TestCase):
 
-    #0
     def setUp(self):
         self.name = "Anna"
         self.surname = "Kowalski"
@@ -45,8 +46,6 @@ class BankTest(unittest.TestCase):
     def setToZero(self):
         Bank.next_bank_id = 1
         self.exampleBank = Bank(self.bank_name) 
-      #  self.exampleBank.bank_id = 1
-      #  self.exampleBank.next_bank_id = 2
         self.dict_of_clients = {}
         self.next_client_id = 1
         self.myhistory = []
@@ -132,7 +131,6 @@ class BankTest(unittest.TestCase):
 
 class SystemTest(unittest.TestCase):
 
-    #0
     def setUp(self):
 	self.dict_of_banks = {}
 	self.dict_of_banks_names = {}
